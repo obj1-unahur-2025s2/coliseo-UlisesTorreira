@@ -1,18 +1,21 @@
 // ARMAS
+import gladiadores.*
 class ArmaDeFilo {
-  const filo
-  const longitud
-  method ataque() = filo * longitud  
-}
+  var property filo
+  const property longitud
+  method poder() = filo * longitud
+  }
+class Contundente {
+  var property peso = 3
+  method poder() = peso
+  }
 
-class Contudente {
-  const peso 
-  method ataque() = peso
-}
+  object casco{
+  method armadura(gladiador) = 10
+  }
 
-object casco {
-  method armadura(gladiador) = 10 
-}
-object escudo {
-  method armadura(gladiador) = 5 + (gladiador.destreza()*0.1)   
-}
+  object escudo{
+    method armadura(gladiador)= 5 + (gladiador.destreza()*0.1)
+  }
+
+
