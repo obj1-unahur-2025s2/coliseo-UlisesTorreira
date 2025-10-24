@@ -1,0 +1,16 @@
+import example.*
+
+
+describe "comportamiento gladiadores basico" {
+  const espada = new ArmaDeFilo(filo=0.9, longitud =2)
+  const espada2 = new ArmaDeFilo(filo=1, longitud =6)
+  const espada3 = new ArmaDeFilo(filo=0, longitud =7)
+  const excalibur = new ArmaDeFilo(filo=0.8, longitud =20)
+
+  const masa = new Contudente(peso=3)
+  
+  test "pepita has initial energy" {
+    assert.equals(100, pepita.energy())
+  }
+
+}
